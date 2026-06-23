@@ -2,13 +2,13 @@
   <img src="banner.png" alt="Quant Technical Analysis Multi-Agents Banner" width="800" />
 </p>
 
-# 🏛️ Quant Technical Analysis Multi-Agents
+# Quant Technical Analysis Multi-Agents
 
 A modern, orchestrator-driven multi-agent quantitative portfolio system built with the **Google Agent Development Kit (ADK)** and powered by **Gemini**. This platform automatically gathers price feeds, computes complex technical indicators (e.g. Williams Alligator, RSI divergences), fetches fundamental metrics, analyzes web news sentiment, synthesizes them into an institutional investment thesis, and exports reports into premium PDF and Excel formats.
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 The system utilizes parallel and sequential orchestration to orchestrate multiple specialized agents:
 
@@ -56,7 +56,7 @@ The system utilizes parallel and sequential orchestration to orchestrate multipl
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -105,7 +105,7 @@ The system utilizes parallel and sequential orchestration to orchestrate multipl
 
 ---
 
-## 💻 Running the Application
+## Running the Application
 
 ### Web UI (ADK Web client)
 
@@ -139,7 +139,7 @@ uv run adk run technical_analysis_agent "Analyze TSLA"
 
 ---
 
-## 🧪 Testing
+## Testing
 
 The repository includes a comprehensive unit testing suite using `pytest`.
 
@@ -151,7 +151,7 @@ uv run pytest
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 .
@@ -173,6 +173,6 @@ uv run pytest
 
 ---
 
-## 🛡️ License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
