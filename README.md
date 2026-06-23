@@ -1,4 +1,8 @@
-# 🏛️ Institutional Quant Technical Analysis Agent
+<p align="center">
+  <img src="banner.png" alt="Quant Technical Analysis Multi-Agents Banner" width="800" />
+</p>
+
+# 🏛️ Quant Technical Analysis Multi-Agents
 
 A modern, orchestrator-driven multi-agent quantitative portfolio system built with the **Google Agent Development Kit (ADK)** and powered by **Gemini**. This platform automatically gathers price feeds, computes complex technical indicators (e.g. Williams Alligator, RSI divergences), fetches fundamental metrics, analyzes web news sentiment, synthesizes them into an institutional investment thesis, and exports reports into premium PDF and Excel formats.
 
@@ -73,6 +77,7 @@ The system utilizes parallel and sequential orchestration to orchestrate multipl
    ```
 3. Set up environment variables:
    Copy `.env.example` to `.env` (either in the root directory or inside `technical_analysis_agent/`):
+
    ```bash
    cp .env.example .env
    ```
@@ -80,14 +85,18 @@ The system utilizes parallel and sequential orchestration to orchestrate multipl
    Open `.env` and configure your credentials. The application supports two modes:
 
    #### Option A: Gemini Developer API (Recommended / Default)
+
    Configure this if you want to use the standard Google GenAI SDK with an API key from Google AI Studio:
+
    ```ini
    GOOGLE_GENAI_USE_VERTEXAI=0
    GEMINI_API_KEY=your_gemini_api_key_here
    ```
 
    #### Option B: Vertex AI (Google Cloud Platform)
+
    Configure this if you want to run within a GCP environment utilizing Vertex AI models:
+
    ```ini
    GOOGLE_GENAI_USE_VERTEXAI=1
    GOOGLE_CLOUD_PROJECT=your-gcp-project-id
@@ -113,13 +122,17 @@ Open the browser at `http://localhost:8000` (or the port specified by the CLI).
 You can run the agent in the command line using the ADK CLI runner.
 
 #### Interactive CLI Mode
+
 To start an interactive, conversational session in the terminal, run:
+
 ```bash
 uv run adk run technical_analysis_agent
 ```
 
 #### Single Query CLI Mode
+
 To run the agent for a single query (e.g., asking it to analyze a specific ticker) and output the result immediately, run:
+
 ```bash
 uv run adk run technical_analysis_agent "Analyze TSLA"
 ```
@@ -162,4 +175,4 @@ uv run pytest
 
 ## 🛡️ License
 
-Confidential - For Internal Use Only.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
