@@ -1,0 +1,56 @@
+{
+  "technical_scoring": {
+    "short_term": {
+      "verdict_thresholds": {
+        "buy": 5,
+        "sell": -5
+      },
+      "weights": {
+        "macd_weekly_daily_acceleration": 2,
+        "macd_4h_momentum": 1,
+        "alligator_mouth": 1,
+        "rsi_divergence": 2
+      },
+      "overrides": {
+        "weekly_rsi_overbought": 75,
+        "weekly_rsi_oversold": 30,
+        "penalty_points": 6
+      }
+    },
+    "long_term": {
+      "verdict_thresholds": {
+        "buy": 5,
+        "sell": -5
+      },
+      "weights": {
+        "macd_quarterly_health": 5,
+        "alligator_mouth": 2,
+        "rsi_divergence": 3
+      }
+    }
+  },
+  "fundamental_scoring": {
+    "max_score": 10,
+    "weights": {
+      "cagr_positive_points": 2,
+      "eps_growing_points": 2,
+      "fcf_positive_points": 2,
+      "valuation_pe_growth_points": 2,
+      "valuation_peg_points": 2,
+      "valuation_high_pe_low_growth_penalty": -2,
+      "valuation_unprofitable_cash_burn_penalty": -4
+    },
+    "thresholds": {
+      "peg_ratio_limit": 1.2,
+      "high_pe_limit": 40.0,
+      "low_growth_limit": 10.0
+    }
+  },
+  "master_synthesis": {
+    "weights": {
+      "fundamental_weight": 0.50,
+      "technical_weight": 0.40,
+      "sentiment_weight": 0.10
+    }
+  }
+}

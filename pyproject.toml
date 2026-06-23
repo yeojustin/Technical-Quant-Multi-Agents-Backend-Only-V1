@@ -1,0 +1,14 @@
+[project]
+name = "technical-analysis-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-adk>=2.1.0",
+    "pandas-ta>=0.4.71b0",
+    "pytest>=9.0.3",
+    "yfinance>=1.4.1",
+    "openpyxl>=3.1.5",
+    "fpdf2>=2.8.7",
+]

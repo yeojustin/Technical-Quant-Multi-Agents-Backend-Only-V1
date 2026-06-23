@@ -1,0 +1,11 @@
+adk eval \
+    <AGENT_MODULE_FILE_PATH> \
+    <EVAL_SET_FILE_PATH> \
+    [--config_file_path=<PATH_TO_TEST_JSON_CONFIG_FILE>] \
+    [--print_detailed_results]
+
+
+# fundamental agent
+adk eval \
+    technical_analysis_agent/fundemental_agent \
+    evals/fundamental_agent_pipeline.evalset.json

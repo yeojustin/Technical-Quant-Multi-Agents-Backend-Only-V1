@@ -1,0 +1,8 @@
+pandas_ta
+pandas
+google-adk
+google-adk[eval]
+pytest
+yfinance
+openpyxl
+fpdf2

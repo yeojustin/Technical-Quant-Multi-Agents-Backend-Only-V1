@@ -1,0 +1,31 @@
+{
+  "eval_set_id": "fundamental_agent_pipeline_eval",
+  "name": "Fundamental Agent Pipeline EvalSet",
+  "description": "Evaluation set for testing the fundamental agent pipeline.",
+  "eval_cases": [
+    {
+      "eval_id": "e2e_pipeline_profitable_growth",
+      "conversation": [
+        {
+          "invocation_id": "1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Run fundamental analysis on AAPL"
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "# 📊 Fundamental Analysis Report: AAPL\nHealth Score: **10/10**\nUNDERVALUED"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
