@@ -15,6 +15,7 @@ downloads/
 eggs/
 .eggs/
 lib/
+!frontend/src/lib/
 lib64/
 parts/
 sdist/
@@ -65,7 +66,9 @@ Thumbs.db
 !.env.example
 .env.local
 
-# Project-specific generated outputs
+# Next.js
+frontend/node_modules/
+frontend/.next/
 generated_reports/
 local_data_lake/
 *.pdf
